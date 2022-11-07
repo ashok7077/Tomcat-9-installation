@@ -1,5 +1,5 @@
 # Tomcat-9-installation
-
+login your instance.
 I am using RedHat linux.
 
 To check your OS Information run this command:
@@ -13,7 +13,7 @@ sudo cat /etc/os-release
 ```
 sudo yum update -y
 ```
-Befor install Tomcat we need to install dependences for tomcat.
+## Befor install Tomcat we need to install dependences for tomcat.
 First we need to install java using following:
 ```
 dnf install -y java-11-openjdk-devel
@@ -156,4 +156,5 @@ Check the Manager Apps
 
 `http://SERVER_IP:8080/manager`
 
-Give the username and password what ever you inserted in /usr/local/tomcat-9/webapps/manager/META-INF/context.xml 
+Give the username and password what ever you inserted in /usr/local/tomcat-9/webapps/manager/META-INF/context.xml
+# Tomcat has been successfully installed in RedHat linux
