@@ -9,12 +9,12 @@ sudo cat /etc/os-release
 
 ![image](https://user-images.githubusercontent.com/97009002/200231862-7c14164f-b051-4030-878c-91d447cff896.png)
 
-## We need to update the general pakages using following command:
+## We need to update the general packages using following command:
 ```
 sudo yum update -y
 ```
-## Befor install Tomcat we need to install dependences for tomcat.
-First we need to install java using following:
+## Before installing Tomcat we need to install it's dependencies.
+First we need to install java using following command:
 ```
 dnf install -y java-11-openjdk-devel
 ```
@@ -24,15 +24,15 @@ java -version
 ```
 ![image](https://user-images.githubusercontent.com/97009002/200235400-21d959bc-ecec-49fd-9f2f-015b126fe394.png)
 
-Next download the [tomcat](https://tomcat.apache.org/) pakage.
+Next download the [tomcat package](https://tomcat.apache.org/).
 Click on first link.
 ![image](https://user-images.githubusercontent.com/97009002/200233773-3dc9d637-0d78-497d-a9bd-f8434b76c790.png)
 
-* select the tomcat9 like following screenshot.
+### select the tomcat 9 as shown in screenshot.
 
 ![image](https://user-images.githubusercontent.com/97009002/200234466-a7dd8e5e-67ce-42bc-9819-0452ee703031.png)
 
-* copy the tar.gz link.
+### copy the tar.gz link.
 
 ![image](https://user-images.githubusercontent.com/97009002/200234631-892fe95f-c0b6-4796-bc78-3bd283c837b8.png)
 
@@ -56,9 +56,11 @@ The directory name has been changed.
 ![image](https://user-images.githubusercontent.com/97009002/200237018-03237558-6358-4b60-be79-f6a2202fd57a.png)
 
 The service will run with permissions of a system user called `Tomcat` which you need to create it using useradd command:
+
 ```
 useradd -r tomcat
 ```
+
 Once the tomcat user is created, give it permissions and ownership rights to the Tomcat installation directory and all of its contents using the following chown command:
 ```
 chown -R tomcat:tomcat /usr/local/tomcat-9
@@ -112,7 +114,7 @@ vi /usr/local/tomcat-9/conf/tomcat-users.xml
 ![image](https://user-images.githubusercontent.com/97009002/200240309-463bcc0b-4053-46d3-b94e-c1b57e2396cc.png)
 
 Remove `<!--`..............
-...`-->` to uncommant the users and set password for user like following screenshot:
+...`-->` to uncomment the users and set password for user like following screenshot:
 
 ![image](https://user-images.githubusercontent.com/97009002/200240447-2e3169f4-edb2-4cd9-89b1-f072ead48f50.png)
 
