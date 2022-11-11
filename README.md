@@ -2,7 +2,7 @@
 login your instance.
 I am using RedHat linux.
 
-To check your OS Information run this command:
+To check your OS Information run the following command:
 ```
 sudo cat /etc/os-release
 ```
@@ -25,7 +25,9 @@ java -version
 ![image](https://user-images.githubusercontent.com/97009002/200235400-21d959bc-ecec-49fd-9f2f-015b126fe394.png)
 
 Next download the [tomcat package](https://tomcat.apache.org/).
+
 Click on first link.
+
 ![image](https://user-images.githubusercontent.com/97009002/200233773-3dc9d637-0d78-497d-a9bd-f8434b76c790.png)
 
 ### select the tomcat 9 as shown in screenshot.
@@ -44,6 +46,7 @@ Clone the tomcat pakage using wget command:
 ```
 wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.68/bin/apache-tomcat-9.0.68.tar.gz
 ```
+
 unzip the tar.gz file using following command:
 ```
 tar -xvf apache-tomcat-9.0.68.tar.gz
@@ -52,7 +55,9 @@ Rename the tomcat directory using following command:
 ```
 mv apache-tomcat-9.0.68 tomcat-9
 ```
+
 The directory name has been changed.
+
 ![image](https://user-images.githubusercontent.com/97009002/200237018-03237558-6358-4b60-be79-f6a2202fd57a.png)
 
 The service will run with permissions of a system user called `Tomcat` which you need to create it using useradd command:
